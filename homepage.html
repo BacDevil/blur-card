@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card using HTML & CSS</title>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url("https://i.postimg.cc/26B9yRxF/67278.jpg") no-repeat center center/cover;
+      font-family: "Alata", sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .content-container {
+      position: relative;
+      width: 350px;
+      height: 500px;
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(3px);
+      border-radius: 15px;
+      border: 4px solid white;
+      text-align: center;
+      box-shadow: 0px 10px 39px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+
+    .color-background {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 200px;
+    }
+
+    #blue-circle {
+      width: 350px;
+      height: 350px;
+      background-color: blue;
+      border-radius: 50%;
+      position: absolute;
+      top: -150px;
+      left: -25px;
+      box-shadow: 0px 10px 10px black;
+    }
+
+    #profile {
+      width: 130px;
+      height: 130px;
+      background-image: url("https://i.postimg.cc/ZKPRNGMH/Untitled-design.png");
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      border: 9px solid white;
+      outline: 10px solid rgb(1, 37, 243);
+      box-shadow: 0px 20px 10px black;
+      position: relative;
+      top: -70px;
+      margin: 0 auto;
+    }
+
+    #name {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-top: -40px;
+      color: black;
+    }
+
+    #profession {
+      color: rgb(76, 75, 83);
+      margin-top: 10px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 50px;
+      background-color: blue;
+      color: white;
+    }
+
+    .footer i {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content-container">
+    <div class="color-background">
+      <div id="blue-circle"></div>
+    </div>
+
+    <div id="profile"></div>
+
+    <h1 id="name">Ashutosh</h1>
+    <p id="profession">Web Developer</p>
+
+    <div class="footer">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+    </div>
+  </div>
+</body>
+
+</html>
